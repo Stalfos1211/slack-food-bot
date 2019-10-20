@@ -29,7 +29,7 @@ const createMessage = info => {
         text: {
           type: 'mrkdwn',
           text:
-            'Here are some places you might want to check out.\n\n *Please select a restaurant:*'
+            "Here are some places you might want to check out.\n\n *Blame Sandi if this does't work:*"
         }
       },
       {
