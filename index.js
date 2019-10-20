@@ -30,7 +30,7 @@ const createMessage = info => {
         text: {
           type: 'mrkdwn',
           text:
-            "Here are some places you might want to check out.\n\n *Blame Sandi if this does'nt work:*"
+            "Here are some places you might want to check out.\n\n *Blame Sandi if this doesn't work:*"
         }
       },
       {
