@@ -23,6 +23,7 @@ const getPlacesToEat = async () => {
 
 const createMessage = info => {
   return {
+    response_type: 'in_channel',
     blocks: [
       {
         type: 'section',
