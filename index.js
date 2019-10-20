@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 
 app.post('/slack', (req, res) => {
   console.log('req:', req.body)
-  res.send('this is working')
+  res.send('this is working', { icon_emoji: ':hamburger:' })
 })
 
 app.listen(port, () => console.log(`listening on port ${port}`))
