@@ -8,7 +8,10 @@ module.exports = () => {
     const text = req.body.text
     console.log('text:', text)
 
-    numberToShow = Number(text.match(/show\s(\d{2})/)[1])
+    let numberToShow = 1
+    if (text.length > 0 && text.includes('show')) {
+      numberToShow = Number(text.match(/show\s(\d{1,2})/)[1])
+    }
 
     let placesToEat = await utils.getPlacesToEat(numberToShow)
     let message = utils.createMessage(placesToEat)
