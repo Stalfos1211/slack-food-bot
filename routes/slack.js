@@ -9,7 +9,7 @@ module.exports = () => {
     console.log('text:', text)
 
     let numberToShow = 1
-    if (text.length > 0 && text.includes('show')) {
+    if (text.length > 0 && text.includes('show ')) {
       numberToShow = Number(text.match(/show\s(\d{1,2})/)[1])
     }
 
